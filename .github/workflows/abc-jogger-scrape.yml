@@ -1,0 +1,25 @@
+name: Scrape ABC Jogger 28" inventory
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '6,26,46 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo for script to access
+      uses: actions/checkout@v2
+    - name: Fetch latest data
+      run: |-
+        curl https://shop.lululemon.com/api/shipinventory\?skus\=122850240,3823442,122850254,101755267\&productId\=prod9270549 | jq . > abc_jogger_inventory.json
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Latest data: ${timestamp}" || exit 0
+        git push
