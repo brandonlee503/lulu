@@ -1,18 +1,18 @@
 {
   "122850240": {
-    "available": false,
-    "isLowStock": false,
-    "lowStockMessage": null
+    "available": true,
+    "isLowStock": true,
+    "lowStockMessage": "This item is low in stock"
   },
   "122850254": {
-    "available": false,
-    "isLowStock": false,
-    "lowStockMessage": null
+    "available": true,
+    "isLowStock": true,
+    "lowStockMessage": "This item is low in stock"
   },
   "3823442": {
-    "available": false,
-    "isLowStock": false,
-    "lowStockMessage": null
+    "available": true,
+    "isLowStock": true,
+    "lowStockMessage": "This item is low in stock"
   },
   "101755267": {
     "available": false,
