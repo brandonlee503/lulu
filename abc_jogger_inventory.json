@@ -10,9 +10,9 @@
     "lowStockMessage": "Only a few left!"
   },
   "3823442": {
-    "available": true,
-    "isLowStock": true,
-    "lowStockMessage": "Only a few left!"
+    "available": false,
+    "isLowStock": false,
+    "lowStockMessage": null
   },
   "101755267": {
     "available": false,
