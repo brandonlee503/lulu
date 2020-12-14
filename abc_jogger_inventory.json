@@ -15,8 +15,8 @@
     "lowStockMessage": null
   },
   "101755267": {
-    "available": true,
-    "isLowStock": true,
-    "lowStockMessage": "Only a few left!"
+    "available": false,
+    "isLowStock": false,
+    "lowStockMessage": null
   }
 }
