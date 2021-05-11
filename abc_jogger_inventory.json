@@ -1,8 +1,8 @@
 {
   "122850240": {
-    "available": true,
-    "isLowStock": true,
-    "lowStockMessage": "Hurry, only a few left!"
+    "available": false,
+    "isLowStock": false,
+    "lowStockMessage": null
   },
   "122850254": {
     "available": true,
