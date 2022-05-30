@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl https://shop.lululemon.com/api/shipinventory\?skus\=122850240,3823442,122850254,101755267\&productId\=prod9270549 | jq . > abc_jogger_inventory.json
+        curl https://shop.lululemon.com/api/p/mens-trousers/ABC-Pant-Slim-30/_/prod9610173\?color\=32476\&sz\=30 | jq '.data.attributes."purchase-attributes"."size-driver"[] | select(.size | contains("30"))' > abc_slim_pant_inventory.json
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
